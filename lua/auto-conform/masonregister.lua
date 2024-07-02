@@ -68,10 +68,8 @@ M.register = function(opts)
 						end
 
 						if ignore[ftl] ~= pkg.spec.name then
-							if opts.formatters_by_ft[ftl] == nil then
 								opts.formatters_by_ft[ftl] = opts.formatters_by_ft[ftl] or {}
 								table.insert(opts.formatters_by_ft[ftl], pkg.spec.name)
-							end
 						end
 					end
 				end
