@@ -1,6 +1,6 @@
 # auto-conform
 
-- auto-conform.nvim is an automatic configuration for conform.nvim
+- auto-conform.nvim is an automatic configuration for conform.nvim and mason.nvim
 
 # Installation
 
