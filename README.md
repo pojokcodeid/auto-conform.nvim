@@ -70,3 +70,9 @@ return {
   end,
 }
 ```
+
+- Minimum config
+
+```lua
+ require("auto-conform").setup({})
+```
