@@ -84,3 +84,5 @@ M.setup = function(opts)
 	local cfg = M.register(opts)
 	require("conform").setup(cfg)
 end
+
+return M
