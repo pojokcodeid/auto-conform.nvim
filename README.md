@@ -76,3 +76,15 @@ return {
 ```lua
  require("auto-conform").setup({})
 ```
+
+- Get Default and Overide
+
+```lua
+local opts = {}
+local cfg = require("auto-conform.masonregister").register(opts)
+cfg.formatters_by_ft.lua = { "stylua" }
+cfg.formatters = {
+-- config here
+}
+require("conform").setup(cfg)
+```
