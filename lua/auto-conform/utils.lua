@@ -19,9 +19,9 @@ M.name_maps = {
 }
 
 M.add_new = {
-	["jsonc"] = {"prettier"},
-	["json"] = {"prettier"},
-	["typescriptreact"] = {"prettier"},
+	jsonc = {"prettier"},
+	json = {"prettier"},
+	typescriptreact = {"prettier"},
 }
 
 M.ignore = {

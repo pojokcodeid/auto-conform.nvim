@@ -61,7 +61,7 @@ M.register = function(opts)
 
 						-- add new mapping language
 						for key, value in pairs(addnew) do
-						  if type(addnew[key]) == "table" then
+						   if type(value) == "table" then
 						    -- process table
 						  else
 							  if value == pkg.spec.name then
