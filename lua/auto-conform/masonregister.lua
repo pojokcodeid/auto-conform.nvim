@@ -61,17 +61,17 @@ M.register = function(opts)
 
             -- add new mapping language
             for key, value in pairs(addnew) do
-              if type(value) == "table" then
+              if type(value) == "string" then
+                if value == pkg.spec.name then
+                  opts.formatters_by_ft[key] = opts.formatters_by_ft[key] or {}
+                  table.insert(opts.formatters_by_ft[key], pkg.spec.name)
+                end
+              else
                 for _, value2 in pairs(value) do
                   if value2 == pkg.spec.name then
                     opts.formatters_by_ft[key] = opts.formatters_by_ft[key] or {}
                     table.insert(opts.formatters_by_ft[key], pkg.spec.name)
                   end
-                end
-              else
-                if value == pkg.spec.name then
-                  opts.formatters_by_ft[key] = opts.formatters_by_ft[key] or {}
-                  table.insert(opts.formatters_by_ft[key], pkg.spec.name)
                 end
               end
             end
