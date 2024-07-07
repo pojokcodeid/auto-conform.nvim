@@ -8,6 +8,8 @@ local function resolve_package(mason_package_name)
   local ok, pkg = pcall(registry.get_package, mason_package_name)
   if ok then
     return Optional.of_nilable(pkg)
+  else
+    return Optional.empty()
   end
 end
 
