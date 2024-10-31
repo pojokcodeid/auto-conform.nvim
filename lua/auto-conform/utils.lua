@@ -28,6 +28,7 @@ M.ignore = {
   ["php"] = { "tlint" },
   ["lua"] = { "ast-grep" },
   ["kotlin"] = { "ktlint" },
+  ["go"] = { "ast-grep" },
 }
 
 return M
