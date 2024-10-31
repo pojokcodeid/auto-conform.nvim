@@ -30,6 +30,7 @@ M.ignore = {
   ["kotlin"] = { "ktlint" },
   ["go"] = { "ast-grep" },
   ["rust"] = { "ast-grep" },
+  ["rs"] = { "ast-grep" },
 }
 
 return M
