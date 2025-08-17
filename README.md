@@ -10,7 +10,7 @@
 return {
   "pojokcodeid/auto-conform.nvim",
   dependencies = {
-    "williamboman/mason.nvim",
+    "mason-org/mason.nvim",
     "stevearc/conform.nvim",
   },
   event = "VeryLazy",
